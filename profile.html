@@ -340,254 +340,47 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <div class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" > <i class="fas fa-download fa-sm text-white-50 "></i> Generate Report</a>
-            
-            <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm "> <i class="fas fa-university fa-sm text-white-50"></i> Financial Advisor</a> -->
-          </div>
+            <h1 class="h3 mb-0 text-gray-800">Profile</h1>
+
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Financial Health</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Average (70%)</div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Change Personal Details
+              </h6>
             </div>
+            <div class="card-body">
+              <form class="user" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                  <input type="text" oninput="let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p);" class="form-control form-control-user text-uppercase" name="name" id="name" placeholder="nick andrew">
+                  <br>
+                  <input type="number" class="form-control form-control-user text-uppercase" maxlength="12" name="icno" id="icno" placeholder="99187-56-3776">
+                  <br>
+                  <input type="text" oninput="let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p);" class="form-control form-control-user text-uppercase" name="address" id="address" placeholder="84, bandar kinrara 4, puchong">
+                  <br>
+                  <input type="number" class="form-control form-control-user text-uppercase" maxlength="5" name="postcode" id="postcode" placeholder="37699">
+                  <br>
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$7,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-money-check-alt fa-2x text-gray-300"></i>
-                    </div>
+                  <input type="text" class="form-control form-control-user text-uppercase" name="phone" id="phone" placeholder="+6012655374">
+                  <br>
+                  <input type="text" oninput="let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p);" class="form-control form-control-user text-uppercase" name="wifeothername" id="wifeothername" placeholder="nick@geting.com">
+                  <br>
+                  <input type="number" class="form-control form-control-user text-uppercase" name="wifeothericno" id="wifeothericno" maxlength="12" placeholder="*******">
+                  <br>
+                  <input type="number" class="form-control form-control-user text-uppercase" name="loanamount" id="loanamount" placeholder="07/12/1999">
+                  <br>
+
+                  <br>
+                  <div class="text-right">
+                    <input class="form-control btn-primary btn text-uppercase" type="submit" name="submit" id="submit">
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Annually)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$84,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-file-invoice-dollar
-                      fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Last Logged In</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">12 Jul 2020, 22:47 GMT +8</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-sign-in-alt
-                      fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
 
           <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold ">Malaysian Economic News</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <a><b>New Straits Times:</b></a><br>
-                  <a class="text-gray-900">AirAsia needs to issue new shares to survive</a><br>
-                  <a class="mb-0 text-gray-500">KUALA LUMPUR: A cash call is necessary for AirAsia Group Bhd to remain afloat as banks are unlikely to keep lending without its shareholders supporting any capital-raising exercise, analysts said.</a>
-                  <br><a href="#">Read more.</a><br><br><hr>
-                  <a><b>The Star:</b></a><br>
-                  <a class="text-gray-900">Khazanah Nasional in 2019</a><br>
-                  <a class="mb-0 text-gray-500">Despite the lacklustre market conditions of 2019, Khazanah Nasional Bhd recorded its highest profits ever of RM7.36bil compared to losses of RM6.27bil in 2018.</a>
-                  <br><a href="#">Read more.</a><br><br><hr>
-                  <a><b>The Borneo Post:</b></a><br>
-                  <a class="text-gray-900">Uncertainties remain for planters despite improving CPO prices, exports</a><br>
-                  <a class="mb-0 text-gray-500">KUCHING: Analysts are neutral on the near-term prospects of the plantations sector as uncertainties remain despite a recovery seen in crude palm oil (CPO) prices and palm oil exports.</a>
-                  <br><a href="#">Read more.</a>  
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold ">Income VS Spending</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Income
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Spending
-                    </span>
-                  </div>
-                  <br><a href="#">Detailed report.</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-              <!-- Project Card Example -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Investments</h6>
-                </div>
-                <div class="card-body">
-                  <h4 class="small font-weight-bold">Fixed Deposit - 5 Years<span class="float-right">Matured!</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <hr>
-                  <h4 class="small font-weight-bold">Stock Analysis - PDZ</h4>
-                  <div class="card-body">
-                    <div class="chart-area">
-                      <canvas id="myAreaChart"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Color System -->
-              <div class="row">
-                <div class="col-lg-6 mb-4">
-              </div>
-              <div class="col-lg-6 mb-4">
-              </div>
-            </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-
-              <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Financial Advisors</h6>
-                </div>
-                <div class="card-body">
-
-                  <a class="d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <img class="rounded-circle" src="https://images.unsplash.com/photo-1592874097943-e556aeaddc8a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=60&ixlib=rb-1.2.1&q=80&w=60" alt="">
-                    </div>
-                    <div>
-                      <div class="text-truncate">Random Names                      </div>
-                      <div class="small text-gray-500">Online 5 minutes ago</div>
-                    </div>
-                  </a>
-                  <hr>
-
-                  <a class="d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <img class="rounded-circle" src="https://images.unsplash.com/photo-1592935740337-0eb6cd080086?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=60&ixlib=rb-1.2.1&q=80&w=60" alt="">
-                    </div>
-                    <div>
-                      <div class="text-truncate">Herbie Watson                      </div>
-                      <div class="small text-gray-500">Online 8 minutes ago</div>
-                    </div>
-                  </a>
-                  <hr>
-
-                  <a class="d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <img class="rounded-circle" src="https://images.unsplash.com/photo-1592337713480-2ccb9ae18ad8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=60&ixlib=rb-1.2.1&q=80&w=60" alt="">
-                    </div>
-                    <div>
-                      <div class="text-truncate">Kit Burks                      </div>
-                      <div class="small text-gray-500">Online 4 minutes ago</div>
-                    </div>
-                  </a>
-                  <hr>
-
-                  <a class="d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <img class="rounded-circle" src="https://images.unsplash.com/photo-1592119566608-478d979ce1d2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=60&ixlib=rb-1.2.1&q=80&w=60" alt="">
-                    </div>
-                    <div>
-                      <div class="text-truncate">Jared Hooper                      </div>
-                      <div class="small text-gray-500">Online 9 minutes ago</div>
-                    </div>
-                  </a>
-                  <hr>
-
-                  <a class="d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <img class="rounded-circle" src="https://images.unsplash.com/photo-1593278411566-41c223e3aa8b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=60&ixlib=rb-1.2.1&q=80&w=60" alt="">
-                    </div>
-                    <div>
-                      <div class="text-truncate">Polly Stanley                      </div>
-                      <div class="small text-gray-500">Online 5 minutes ago</div>
-                    </div>
-                  </a>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
+          
 
         </div>
         <!-- /.container-fluid -->
